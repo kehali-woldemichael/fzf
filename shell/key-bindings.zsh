@@ -99,9 +99,9 @@ fzf-cd-widget() {
 }
 if [[ "${FZF_ALT_C_COMMAND-x}" != "" ]]; then
   zle     -N             fzf-cd-widget
-  bindkey -M emacs '\ec' fzf-cd-widget
-  bindkey -M vicmd '\ec' fzf-cd-widget
-  bindkey -M viins '\ec' fzf-cd-widget
+  bindkey -M emacs '^P' fzf-cd-widget
+  bindkey -M vicmd '^P' fzf-cd-widget
+  bindkey -M viins '^P' fzf-cd-widget
 fi
 
 # CTRL-R - Paste the selected command from history into the command line
@@ -132,9 +132,9 @@ fzf-history-widget() {
   return $ret
 }
 zle     -N            fzf-history-widget
-bindkey -M emacs '^R' fzf-history-widget
-bindkey -M vicmd '^R' fzf-history-widget
-bindkey -M viins '^R' fzf-history-widget
+bindkey -M emacs '^F' fzf-history-widget
+bindkey -M vicmd '^F' fzf-history-widget
+bindkey -M viins '^F' fzf-history-widget
 fi
 
 } always {

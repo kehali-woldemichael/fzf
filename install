@@ -3,13 +3,12 @@
 set -u
 
 version=0.53.0
-auto_completion=
-key_bindings=
-update_config=2
-shells="bash zsh fish"
-prefix='~/.fzf'
-prefix_expand=~/.fzf
-fish_dir=${XDG_CONFIG_HOME:-$HOME/.config}/fish
+auto_completion=1
+key_bindings=1
+update_config=0
+shells="zsh"
+prefix="$HOME/Core/apps/ohmyzsh/custom/fzf"
+prefix_expand=$HOME/Core/apps/ohmyzsh/custom/fzf
 
 help() {
   cat << EOF
